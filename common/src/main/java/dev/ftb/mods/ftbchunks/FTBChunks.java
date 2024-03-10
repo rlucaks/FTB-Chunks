@@ -426,9 +426,12 @@ public class FTBChunks {
 	}
 
 	private void teamConfig(TeamCollectPropertiesEvent event) {
+		//event.add(FTBChunksProperties.ALLOW_EXPLOSIONS);
+		//event.add(FTBChunksProperties.ALLOW_MOB_GRIEFING);
 		event.add(FTBChunksProperties.ALLOW_ALL_FAKE_PLAYERS);
 		event.add(FTBChunksProperties.ALLOW_NAMED_FAKE_PLAYERS);
 		event.add(FTBChunksProperties.ALLOW_FAKE_PLAYERS_BY_ID);
+		//event.add(FTBChunksProperties.ALLOW_PVP);
 
 		// block edit/interact properties vary on forge & fabric
 		FTBChunksExpected.getPlatformSpecificProperties(event);
